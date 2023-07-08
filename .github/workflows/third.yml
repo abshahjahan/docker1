@@ -1,0 +1,15 @@
+name: The Third Workflow
+on: workflow_dispatch
+jobs:
+  first-job:
+    runs-on: ubuntu_latest
+    steps:
+      - name: Print Time
+        run: echo "9:37 PM"
+      - name: Print Time Zone
+        run: echo "Kolkata"
+  second-job:
+    runs-on: ubuntu_latest
+    steps:
+      - name: Print Bye
+        run: echo "Bye"
